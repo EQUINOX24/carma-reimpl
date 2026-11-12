@@ -1,10 +1,10 @@
 # carma-reimpl
 
-A minimal, fast-and-dirty reimplementation of CARMA(p, q) models for irregularly sampled
+A minimal reimplementation of CARMA(p, q) models for irregularly sampled
 time series (Kelly et al. 2014, [arXiv:1402.5978](https://arxiv.org/abs/1402.5978)).
 
-This is step 1: exact Kalman-filter likelihood, simulation, multi-start maximum likelihood,
-AICc order selection, and a plot. There is no MCMC, prediction, or diagnostics yet.
+At this stage Kalman-filter likelihood, simulation, multi-start maximum likelihood, and
+AICc order selection are implemented. There is no MCMC (Markov chain Monte Carlo), prediction, or diagnostics yet.
 
 ## Install and run
 
@@ -13,8 +13,6 @@ pip install -e .            # needs numpy and scipy only
 python examples/demo.py     # fits CARMA(p,q), writes docs/demo_fit.svg (~2 min)
 python -m unittest discover -s tests -v
 ```
-
-The plot is written with a small standard-library SVG writer, so there is no matplotlib dependency.
 
 ## Result (demo)
 
@@ -62,4 +60,4 @@ posterior summaries and ESS, residual diagnostics, and a real data example.
 
 ## License
 
-Not chosen yet. Add a LICENSE file before publishing.
+ GNU General Public License v3.0 or later
