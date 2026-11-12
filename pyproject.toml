@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carma-reimpl"
+version = "0.0.1"
+description = "Minimal reimplementation of CARMA(p,q) likelihood and fitting for irregularly sampled time series"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy"]
+
+[tool.setuptools]
+packages = ["carma_reimpl"]
